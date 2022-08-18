@@ -1,0 +1,28 @@
+<%- include("header")-%>
+
+<div class="home">
+    <div class="content">
+        <h1>HOME</h1>
+        <p>
+            Nunc nec convallis mauris, tristique venenatis mauris. Mauris porttitor tristique tellus, quis 
+            euismod risus. Morbi pharetra, elit eget luctus pretium, nibh nibh tempus mi, a placerat nisl risus 
+            aliquam odio. Nunc sed mauris congue, elementum sem eu, ullamcorper nunc. Maecenas mollis sapien non 
+            consequat elementum. Phasellus laoreet mattis nunc et pellentesque. Aliquam a suscipit dui, in 
+            ultricies lacus. Vivamus arcu risus, aliquet euismod malesuada ut, faucibus a nibh. Integer maximus 
+            diam dolor. Aenean aliquet tortor et enim auctor, quis pretium magna varius. Phasellus a aliquet quam. 
+            Sed fringilla enim diam, at cursus leo venenatis sit amet. Sed scelerisque dictum metus, nec lobortis 
+            elit. Suspendisse mattis massa vitae lacus accumsan, finibus sodales augue blandit.
+        </p>
+    </div>
+    
+    <div class="content">
+        <%for(var i=0;i<title.length;i++){%>
+            <h1><%=title[i].heading%></h1>
+            <p><%=content[i].content.substring(0,100)%>.....<a href="/<%=title[i].id%>">Read more</a></p>
+            <br>
+            <br>
+        <%}%>
+    </div>
+</div>
+
+<%- include("footer")-%>

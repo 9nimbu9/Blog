@@ -1,0 +1,19 @@
+<%- include("header")-%>
+
+<div class="content">
+    <form action="/compose" method="post">
+        <div class="mb-3">
+            <h1>COMPOSE</h1>
+            <br>
+            <h6>Title</h6>
+            <input class="form-control" type="text" name="title">
+            <br>
+            <h6>Post</h6>
+            <textarea class="form-control" rows="5" name="content"></textarea>
+            <br>    
+            <button class="btn btn-info" type="submit" name="submit">POST</button>
+        </div>
+    </form>
+</div>
+
+<%- include("footer")-%>

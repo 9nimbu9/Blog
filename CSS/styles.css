@@ -1,0 +1,26 @@
+body{
+    margin: 0;
+    font-family: cursive;
+}
+.navbar 
+{
+    background-color:rgb(248, 244, 228);
+    color: gray;
+}
+.nav-item:hover
+{
+    color:darkslateblue;
+}
+.navbar-brand
+{
+    color: grey;
+    font-size: 250%;
+}
+.content
+{
+    margin: 5%;
+}
+.compose
+{
+    text-align: center;
+}
